@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:last-child {
+            background-color: red;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        ul li:hover:after {
+            content: "★";
+        }
+        .container::first-line{
+            color: blue;
+            font-size: 20px;
+        }
+        .container{
+            background-color: aquamarine;
+            position: relative;
+            color: black;
+            font-display: auto;
+
+        }
+        .container::after{
+            content: "";
+            background-color: rgb(188, 140, 140);
+            position: absolute;
+            inset: 0;
+
+
+        }
+        .para::first-letter{
+            font-size: 37px;
+            color: brown;
+            font-family: cursive;
+
+        }
+        .para::selection{
+            background-color: purple;
+
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>first</li>
+        <li>second</li>
+        <li>Third</li>
+        <li>fourth</li>
+        <li>fith</li>
+        <li>sixth</li>
+        <li>seventh</li>
+    </ul>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique veniam mollitia tenetur, vitae reprehenderit magni. Nobis similique cupiditate cum sequi qui ex nulla soluta voluptate facilis nisi perferendis repellat molestiae obcaecati fugiat excepturi esse natus veniam iure quos amet blanditiis, tempora totam assumenda? Dolores atque quibusdam tempora ex et ipsam accusamus fugit ab, ullam reiciendis pariatur culpa repudiandae itaque tenetur! Dignissimos est accusantium eum debitis natus, dolore beatae modi, nesciunt iusto maxime qui corrupti veniam adipisci? Nisi ratione nostrum esse exercitationem eius provident sequi ullam tenetur dolor nihil, fuga enim ut quam odit maxime eum quas perferendis in dolorem voluptas?</p>
+    </div>
+    <p class="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, eveniet optio placeat, ipsa quas facilis mollitia asperiores explicabo voluptates sequi quibusdam soluta tempora autem sint, eos nisi? Dignissimos aut molestiae laboriosam nostrum suscipit, magni nihil rem nemo doloremque voluptates recusandae.
+    </p>
+</body>
+</html>
