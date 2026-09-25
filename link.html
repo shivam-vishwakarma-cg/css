@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .animated-dropdown ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #555;
+}
+.animated-dropdown li {
+  position: relative;
+}
+.animated-dropdown li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.animated-dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.animated-dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+}
+.animated-dropdown .dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+.animated-dropdown .dropdown-content a:hover {
+  background-color: #ddd;
+}
+    </style>
+</head>
+<body>
+    <nav class="animated-dropdown">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li class="dropdown">
+      <a href="#" class="dropbtn">Blog</a>
+      <div class="dropdown-content">
+        <a href="#">Posts</a>
+        <a href="#">Categories</a>
+        <a href="#">Tags</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+</body>
+</html>
